@@ -1,0 +1,1393 @@
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8">
+  <title>Сеть автомоек "Мой Порт"</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!-- Mobile Specific Metas-->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" th:href="@{../css/base.css}" href="../static/css/base.css" type="text/css">
+  <link rel="stylesheet" th:href="@{../css/layout.css}" href="../static/css/layout.css" type="text/css">
+  <link rel="stylesheet" th:href="@{../css/style.css}" href="../static/css/style.css" type="text/css">
+  <link rel="stylesheet" th:href="@{../dist/magnific-popup.css}" href="../static/dist/magnific-popup.css"
+        type="text/css">
+  <!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+<body data-spy="scroll" data-target="#nav-wrap">
+<header class="mobile">
+  <div class="row">
+    <div class="col full">
+      <div class="logo">
+        <a th:href="@{index.html}" href="index.html"><img alt="" th:src="@{../static/images/logo-site.png}"
+                                                          src="../static/images/logo-site.png"></a>
+      </div>
+      <nav id="nav-wrap">
+        <a class="mobile-btn" th:href="@{#nav-wrap}" href="#nav-wrap" title="Show navigation">Show navigation</a>
+        <a class="mobile-btn" th:href="@{#}" href="#" title="Hide navigation">Hide navigation</a>
+        <ul id="nav" class="nav">
+          <li><a th:href="@{#intro}" href="#intro">Главная</a></li>
+          <li><a th:href="@{#about}" href="#about">О нас</a></li>
+          <li><a th:href="@{#services}" href="#services">Наши услуги</a></li>
+          <li><a th:href="@{#portfolio}" href="#portfolio">Портфолио</a></li>
+          <li><a th:href="@{#journal}" href="#journal">Запись онлайн</a></li>
+          <li><a th:href="@{#contact}" href="#contact">Конлакты</a></li>
+        </ul>
+      </nav>
+      <div id="header-contact">
+        <a th:href="@{#form-order}" href="#form-order" class="order"><input id="order-call" type="button"
+                                                                            value="Заказать звонок"></a>
+        <div id="aaa">
+          <form action="" method="" id="form-order" name="form-order">
+            <h1>ЗАКАЗАТЬ ЗВОНОК</h1>
+            <input type="text" placeholder="Введите имя" id="zv-name" name="zv-name">
+            <input type="text" placeholder="Введите номер телефона" id="zv-number" name="zv-number">
+            <input type="submit" id="submit" placeholder="Отправить" onclick="getCall()">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<section id="intro">
+  <div id="intro-slider" class="flexslider">
+    <ul class="slides">
+      <li>
+        <div class="row">
+          <div class="col full">
+            <div class="slider-text">
+              <h2>Добро пожаловать на <span>официальный сайт</span> сети автомоек "МойПорт!"</h2>
+              <p>"МойПорт" - это сеть автомоек, которая оказывает все виды услуг, связанные с мойкой,
+                химчисткой, полировкой и шиномонтажом автомобилей любого класса.</p>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="row">
+          <div class="col full">
+            <div class="slider-text">
+              <h2>Помоем вашу машину <span>быстро, качественно, доступно!</span></h2>
+              <p>Ваша машина будет выглядеть как новая!</p>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+<section id="about">
+  <div class="row section-head">
+    <h1>О нас</h1>
+  </div>
+  <div class="row sel">
+    <div class="row-colon">
+      <div class="row-colon-two">
+        <h3>г. Минск, ул. Горецкого, д. 49</h3>
+      </div>
+      <img th:src="@{../images/vvvv1.JPG}" src="../static/images/vvvv1.JPG">
+    </div>
+    <div class="row-colon">
+      <div class="row-colon-two">
+        <h3>г. Минск, ул. Ложинская, д. 4</h3>
+      </div>
+      <img th:src="@{../images/IMG_0683.JPG}" src="../static/images/IMG_0683.JPG">
+    </div>
+    <div class="row-colon">
+      <div class="row-colon-two">
+        <h3>мк-н Боровляны, ул. Хвойная, д. 2а</h3>
+      </div>
+      <img th:src="@{../images/IMG_0685.JPG}" src="../static/images/IMG_0685.JPG">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col full"><h3>Сеть автомоек "МойПорт" гарантирует</h3></div>
+  </div>
+  <div class="row process-wrap">
+    <div class="col">
+      <img th:src="@{../images/a4.png}" src="../static/images/a4.png">
+      <h4>Качество</h4>
+      <p>Принципы работы автоцентра: качество обслуживания клиента, постоянное развитие и
+        применение самых передовых технологий для достижения блестящего результата.
+      </p>
+    </div>
+    <div class="col">
+      <img th:src="@{../images/spec.png}" src="../static/images/spec.png">
+      <h4>Специалисты</h4>
+      <p>
+        Все наши сотрудники - профессионалы своего дела, работающие в данной области более 10 лет.
+      </p>
+    </div>
+    <div class="col m-first">
+      <img th:src="@{../images/best-price.png}" src="../static/images/best-price.png">
+      <h4>Цены</h4>
+      <p>
+        Мы предоставляем высококачественные услуги по привлекательным ценам.
+        На нашей мойке недорого можно придать презентабельный внешний вид машинам
+        эконом-класса и авто эксклюзивных марок.
+      </p>
+    </div>
+    <div class="col">
+      <img th:src="@{../images/bonus-orange.png}" src="../static/images/bonus-orange.png">
+      <h4>Бонусы и акции</h4>
+      <p>
+        Для постоянных клиентов мы предоставляем карту лояльности со скидками. Регулярные акции
+        позволят осуществлять уход за вашим автомобилем на самых выгодных условиях.
+      </p>
+    </div>
+  </div>
+</section>
+<section id="services">
+  <div class="row section-head">
+    <h2>Наши услуги</h2>
+  </div>
+  <div class="row">
+    <div class="services-wrapper">
+      <a th:href="@{#v-window-1}" href="#v-window-1" class="open-popap">
+        <div class="col">
+          <h2><i class="icon-list-alt"></i>Автомойка</h2>
+          <p>«МойПорт» - это автомойка с полным набором услуг: бесконтактная мойка,
+            нано-мойка, химчистка салона, мойка для грузовых автомобилей. Идеальная автомойка должна быть
+            одновременно быстрой, безопасной, качественной и доступной. Это сочетание мы стремимся
+            воплощать.
+          </p>
+        </div>
+      </a>
+      <div class="v-hidden">
+        <div id="v-window-1">
+          <h2>Мойка автомобилей</h2>
+          <table class="info-order">
+            <tr>
+              <td colspan="1" width="10%"></td>
+              <td colspan="3" width="90%">Стоимость услуг(цены указаны в рублях)</td>
+            </tr>
+            <tr>
+              <td width="55%"><span class="main-span">Наименование услуг</span></td>
+              <td width="15%"><span class="main-span">Легковой</span></td>
+              <td width="15%"><span class="main-span">Минивен, Джип</span></td>
+              <td width="15%"><span class="main-span">Микроавтобус</span></td>
+            </tr>
+            <tr>
+              <td width="55%" align="left">
+                <p class="main-p">Техническая мойка</p>
+              </td>
+              <td width="15%">5 руб</td>
+              <td width="15%">6 руб</td>
+              <td width="15%">7 руб</td>
+            </tr>
+            <tr>
+              <td width="55%" align="left">
+                <p class="main-p">Мойка без сушки "ЭКОНОМ"</p><br/>
+                (бесконтактная мойка кузова специальным составом(обработка только стёкол и зеркал))
+              </td>
+              <td width="15%">10 руб</td>
+              <td width="15%">11 руб</td>
+              <td width="15%">12 руб</td>
+            </tr>
+            <tr>
+              <td width="55%" align="left">
+                <p class="main-p">Мойка "СТАРТ"</p><br/>
+                (бесконтактная мойка специальным составом + сушка (кузов, пороги, коврики),
+                обработка воском, продувка всего кузова сжатым воздухом)
+              </td>
+              <td width="15%">13 руб</td>
+              <td width="15%">15 руб</td>
+              <td width="15%">17 руб</td>
+            </tr>
+            <tr>
+              <td width="55%" align="left">
+                <p class="main-p">Комплекс "ПРЕМИУМ"</p><br/>
+                (бесконтактная мойка специальным составом + сушка (кузов, пороги, коврики),
+                обработка воском, продувка всего кузова сжатым воздухом, уборка салона и
+                багажника пылесосом)
+              </td>
+              <td width="15%">20 руб</td>
+              <td width="15%">22 руб</td>
+              <td width="15%">24 руб</td>
+            </tr>
+            <tr>
+              <td width="55%" align="left">
+                <p class="main-p">Комплекс "ЛЮКС"</p><br/>
+                (бесконтактная мойка специальным составом + сушка (кузов, пороги, коврики),
+                обработка воском, продувка всего кузова сжатым воздухом, уборка салона и
+                багажника пылесосом, обработка пластика специальным составом с эффектом антистатика,
+                очистка всех стёкол специальным составом, чернение резины)
+              </td>
+              <td width="15%">29 руб</td>
+              <td width="15%">32 руб</td>
+              <td width="15%">34 руб</td>
+            </tr>
+            <tr>
+              <td width="55%" align="left">
+                <p class="main-p">Комплекс "VIP"</p><br/>
+                (бесконтактная мойка специальным составом + сушка (кузов, пороги, коврики),
+                обработка воском, продувка всего кузова сжатым воздухом, уборка салона и
+                багажника пылесосом, обработка пластика специальным составом с эффектом антистатика,
+                очистка всех стёкол специальным составом, чернение резины, мойка колёсных дисков
+                специальным составом(отбеливание))
+              </td>
+              <td width="15%">33 руб</td>
+              <td width="15%">36 руб</td>
+              <td width="15%">38 руб</td>
+            </tr>
+            <tr>
+              <td width="55%" align="left">
+                <p class="main-p">Защитная мойка "МойПорт"</p><br/>
+                (бесконтактная мойка специальным составом + сушка (кузов, пороги, коврики),
+                обработка воском, продувка всего кузова сжатым воздухом, обработка кузова
+                защитным полимером)
+              </td>
+              <td width="15%">19 руб</td>
+              <td width="15%">21 руб</td>
+              <td width="15%">24 руб</td>
+            </tr>
+            <tr>
+              <td width="55%" align="left">
+                <p class="main-p">Уборка салона "ALL"</p><br/>
+                (уборка салона и багажника пылесосом (от степени загрязнения цена может
+                варироваться), очистка всех стёкол специальным составом, обработка панелей
+                салона спецсредствами, кондеционер кожи)
+              </td>
+              <td width="15%">5 руб</td>
+              <td width="15%">6 руб</td>
+              <td width="15%">7 руб</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <a th:href="@{#v-window-2}" href="#v-window-2" class="open-popap">
+        <div class="col">
+          <h2><i class="icon-list-alt"></i>Химчистка</h2>
+          <p>Химчистка салона автомобиля нужна не только для эстетически приятного зрелища, но и также для
+            здоровья водителя и пассажиров. Связано это с тем, что на визуально чистых сидениях содержится
+            очень много глубокой пыли и микроорганизмов, которые могут стать причиной проявления
+            у людей аллергических реакций.</p>
+        </div>
+      </a>
+      <div class="v-hidden">
+        <div id="v-window-2">
+          <h2>Химчистка автомобилей</h2>
+          <table class="info-order">
+            <tr>
+              <td colspan="1" width="10%"></td>
+              <td colspan="3" width="90%">Стоимость услуг(цены указаны в рублях)</td>
+            </tr>
+            <tr>
+              <td width="55%"><span class="main-span">Наименование услуг</span></td>
+              <td width="15%"><span class="main-span">Легковой</span></td>
+              <td width="15%"><span class="main-span">Минивен, Джип</span></td>
+              <td width="15%"><span class="main-span">Микроавтобус</span></td>
+            </tr>
+            <tr>
+              <td width="55%" align="left">
+                <p class="main-p">Полная химическая чистка салона, от степени загрязнения</p>
+              </td>
+              <td width="15%">150 руб</td>
+              <td width="15%">170 руб</td>
+              <td width="15%">200 руб</td>
+            </tr>
+            <tr>
+              <td width="55%" align="left">
+                <p class="main-p">Химчистка панелей дверей (за единицу)</p><br/>
+              </td>
+              <td width="15%">6 руб</td>
+              <td width="15%">6 руб</td>
+              <td width="15%">6 руб</td>
+            </tr>
+            <tr>
+              <td width="55%" align="left">
+                <p class="main-p">Химчистка приборной панели</p><br/>
+              </td>
+              <td width="15%">8 руб</td>
+              <td width="15%">8 руб</td>
+              <td width="15%">8 руб</td>
+            </tr>
+            <tr>
+              <td width="55%" align="left">
+                <p class="main-p">Химчистка сидений(кожа) - 1 сидение, от</p><br/>
+              </td>
+              <td width="15%">7 руб</td>
+              <td width="15%">7 руб</td>
+              <td width="15%">7 руб</td>
+            </tr>
+            <tr>
+              <td width="55%" align="left">
+                <p class="main-p">Химчистка сидений(велюр) - 1 сидение, от</p><br/>
+              </td>
+              <td width="15%">7 руб</td>
+              <td width="15%">7 руб</td>
+              <td width="15%">7 руб</td>
+            </tr>
+            <tr>
+              <td width="55%" align="left">
+                <p class="main-p">Химчистка пола, от</p><br/>
+              </td>
+              <td width="15%">22 руб</td>
+              <td width="15%">22 руб</td>
+              <td width="15%">22 руб</td>
+            </tr>
+            <tr>
+              <td width="55%" align="left">
+                <p class="main-p">Химчистка потолка, от</p><br/>
+              </td>
+              <td width="15%">25 руб</td>
+              <td width="15%">25 руб</td>
+              <td width="15%">25 руб</td>
+            </tr>
+            <tr>
+              <td width="55%" align="left">
+                <p class="main-p">Химчистка багажника</p><br/>
+              </td>
+              <td width="15%">22 руб</td>
+              <td width="15%">22 руб</td>
+              <td width="15%">22 руб</td>
+            </tr>
+            <tr>
+              <td width="55%" align="left">
+                <p class="main-p">Химчистка ковриков, за единицу</p><br/>
+              </td>
+              <td width="15%">3 руб</td>
+              <td width="15%">3 руб</td>
+              <td width="15%">3 руб</td>
+            </tr>
+            <tr>
+              <td width="55%" align="left">
+                <p class="main-p">Удаление тонировочной плёнки,
+                  очистка стекла от клея - 1 стекло, от</p><br/>
+              </td>
+              <td width="15%">10 руб</td>
+              <td width="15%">10 руб</td>
+              <td width="15%">10 руб</td>
+            </tr>
+            <tr>
+              <td width="55%" align="left">
+                <p class="main-p">Химчистка двигателя и моторного отсека с консервацией
+                  (нанесение пецконсерванта)</p><br/>
+              </td>
+              <td width="15%">25 руб</td>
+              <td width="15%">25 руб</td>
+              <td width="15%">25 руб</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <a th:href="@{#v-window-3}" href="#v-window-3" class="open-popap">
+        <div class="col m-first">
+          <h2><i class="icon-list-alt"></i>Полировка</h2>
+          <p>Некоторые автовладельцы ошибочно считают, что полировать кузов автомобиля нужно только лишь для
+            придания ему более презентабельного и свежего вида. На самом деле полировка кузова автомобиля
+            позволяет защитить его от коррозии, а лакокрасочное покрытие – от выгорания на солнце.
+          </p>
+        </div>
+      </a>
+      <div class="v-hidden">
+        <div id="v-window-3">
+          <h2>Полировка автомобилей</h2>
+          <table class="info-order">
+            <tr>
+              <td colspan="1" width="10%"></td>
+              <td colspan="3" width="90%">Стоимость услуг(цены указаны в рублях)</td>
+            </tr>
+            <tr>
+              <td width="55%"><span class="main-span">Наименование услуг</span></td>
+              <td width="15%"><span class="main-span">Легковой</span></td>
+              <td width="15%"><span class="main-span">Минивен, Джип</span></td>
+              <td width="15%"><span class="main-span">Микроавтобус</span></td>
+            </tr>
+            <tr>
+              <td width="55%" align="left">
+                <p class="main-p">Востановительная полировка кузова, механическая</p>
+                (бесконтактная мойка специальным составом + сушка (кузов, пороги, коврики),
+                обработка воском, продувка всего кузова сжатым воздухом, подготовка ЛКП,
+                полировка с применением абразивных материалов)
+              </td>
+              <td width="15%">от 300 руб</td>
+              <td width="15%">от 320 руб</td>
+              <td width="15%">от 350 руб</td>
+            </tr>
+            <tr>
+              <td width="55%" align="left">
+                <p class="main-p">Защитная полировка твёрдый воск (блеск + длительная защита ЛКП)</p><br/>
+                (бесконтактная мойка специальным составом + сушка (кузов, пороги, коврики),
+                обработка воском, продувка всего кузова сжатым воздухом, подготовка ЛКП, нанесение защитного
+                состава)<br/>
+                Для новых автомобилей не требующих абразивной восстановительной полировки!
+              </td>
+              <td width="15%">110 руб</td>
+              <td width="15%">120 руб</td>
+              <td width="15%">130 руб</td>
+            </tr>
+            <tr>
+              <td width="55%" align="left">
+                <p class="main-p">Защитная полировка кузова с применением инновационных
+                  материалов "ЖИДКОЕ СТЕКЛО"</p><br/>
+                (глубокий насыщенный блеск и сверстойкая защита ЛКП, ультра прочное покрытие,
+                высокая степень адгезии и долгосрочная эксплуатация, глянцевый зеркальный
+                эффект, гидрофобный эффект)<br/>
+                Для новых автомобилей не требующих абразивной восстановительной полировки!
+              </td>
+              <td width="15%">от 300 руб</td>
+              <td width="15%">от 320 руб</td>
+              <td width="15%">от 350 руб</td>
+            </tr>
+            <tr>
+              <td width="55%" align="left">
+                <p class="main-p">Полировка отдельных элементов кузова,
+                  абразивная полировка (за один элемент)</p><br/>
+              </td>
+              <td width="15%">от 30 руб</td>
+              <td width="15%">от 30 руб</td>
+              <td width="15%">от 30 руб</td>
+            </tr>
+            <tr>
+              <td width="55%" align="left">
+                <p class="main-p">Полировка фар или задних фонарей (за пару)</p><br/>
+              </td>
+              <td width="15%">от 30 руб</td>
+              <td width="15%">от 30 руб</td>
+              <td width="15%">от 30 руб</td>
+            </tr>
+            <tr>
+              <td width="55%" align="left">
+                <p class="main-p">Обработка (полировка) хромированных наружных элементов кузова</p><br/>
+              </td>
+              <td width="15%">от 8 руб</td>
+              <td width="15%">от 8 руб</td>
+              <td width="15%">от 8 руб</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <a th:href="@{#v-window-4}" href="#v-window-4" class="open-popap">
+        <div class="col first">
+          <h2><i class="icon-list-alt"></i>Шиномонтаж</h2>
+          <p>
+            Мы оказываем комплекс услуг, необходимых для поддержания в рабочем состоянии колес автомобиля.
+            Сюда
+            входят такие операции, как снятие (установка) колес с автомобиля, мойка колес, монтаж (демонтаж)
+            шин с дисков, балансировка колеса в сборе, ремонт шин и дисков.
+          </p>
+        </div>
+      </a>
+      <div class="v-hidden">
+        <div id="v-window-4">
+          <h2>Шиномонтаж автомобилей</h2>
+          <table class="info-order">
+            <tr>
+              <td colspan="1" width="20%"></td>
+              <td colspan="3" width="80%">Легковые автомобили, минивены</td>
+            </tr>
+            <tr>
+              <td width="22%"><span class="main-span">Услуги</span></td>
+              <td width="22%"><span class="main-span">Вид диска</span></td>
+              <td width="8%"><span class="main-span">R13</span></td>
+              <td width="8%"><span class="main-span">R14</span></td>
+              <td width="8%"><span class="main-span">R15</span></td>
+              <td width="8%"><span class="main-span">R16</span></td>
+              <td width="8%"><span class="main-span">R17</span></td>
+              <td width="8%"><span class="main-span">R18</span></td>
+              <td width="8%"><span class="main-span">R19-R22</span></td>
+            </tr>
+            <tr>
+              <td width="22%"><p class="main-p">Демонтаж</p></td>
+              <td width="22%"></td>
+              <td width="8%">2 руб</td>
+              <td width="8%">2 руб</td>
+              <td width="8%">2 руб</td>
+              <td width="8%">2.5 руб</td>
+              <td width="8%">3 руб</td>
+              <td width="8%">3.5 руб</td>
+              <td width="8%">3.5 руб</td>
+            </tr>
+            <tr>
+              <td width="22%"><p class="main-p">Монтаж</p></td>
+              <td width="22%"></td>
+              <td width="8%">2 руб</td>
+              <td width="8%">2 руб</td>
+              <td width="8%">2 руб</td>
+              <td width="8%">2.5 руб</td>
+              <td width="8%">3 руб</td>
+              <td width="8%">3.5 руб</td>
+              <td width="8%">3.5 руб</td>
+            </tr>
+            <tr>
+              <td width="22%" rowspan="2"><p class="main-p">Балансировка (стоимость грузов оплачивается
+                дополнительно)</p></td>
+              <td width="22%">Стальной диск</td>
+              <td width="8%">2 руб</td>
+              <td width="8%">2 руб</td>
+              <td width="8%">2 руб</td>
+              <td width="8%">2 руб</td>
+              <td width="8%">2 руб</td>
+              <td width="8%">2 руб</td>
+              <td width="8%">2.5 руб</td>
+            </tr>
+            <tr>
+              <td width="22%">Литой диск</td>
+              <td width="8%">3 руб</td>
+              <td width="8%">3 руб</td>
+              <td width="8%">3 руб</td>
+              <td width="8%">3 руб</td>
+              <td width="8%">3 руб</td>
+              <td width="8%">3 руб</td>
+              <td width="8%">3.5 руб</td>
+            </tr>
+            <tr>
+              <td width="22%"><p class="main-p">Снятие колеса с автомобиля</p></td>
+              <td width="22%"></td>
+              <td width="8%">1.5 руб</td>
+              <td width="8%">1.5 руб</td>
+              <td width="8%">1.5 руб</td>
+              <td width="8%">1.75 руб</td>
+              <td width="8%">2 руб</td>
+              <td width="8%">2.5 руб</td>
+              <td width="8%">3 руб</td>
+            </tr>
+            <tr>
+              <td width="22%"><p class="main-p">Установка колеса на автомобиль</p></td>
+              <td width="22%"></td>
+              <td width="8%">1.5 руб</td>
+              <td width="8%">1.5 руб</td>
+              <td width="8%">1.5 руб</td>
+              <td width="8%">1.75 руб</td>
+              <td width="8%">2 руб</td>
+              <td width="8%">2.5 руб</td>
+              <td width="8%">3 руб</td>
+            </tr>
+            <tr>
+              <td width="22%" rowspan="2"><p class="main-p">Комплекс 1 колеса*</p></td>
+              <td width="22%">Стальной диск</td>
+              <td width="8%">9 руб</td>
+              <td width="8%">9 руб</td>
+              <td width="8%">9 руб</td>
+              <td width="8%">10.5 руб</td>
+              <td width="8%">12 руб</td>
+              <td width="8%">14 руб</td>
+              <td width="8%">15.5 руб</td>
+            </tr>
+            <tr>
+              <td width="22%">Литой диск</td>
+              <td width="8%">10 руб</td>
+              <td width="8%">10 руб</td>
+              <td width="8%">10 руб</td>
+              <td width="8%">11.5 руб</td>
+              <td width="8%">13 руб</td>
+              <td width="8%">15 руб</td>
+              <td width="8%">16.5 руб</td>
+            </tr>
+            <tr>
+              <td width="22%" rowspan="2"><p class="main-p">Комплекс 4 колеса*</p></td>
+              <td width="22%">Стальной диск</td>
+              <td width="8%">36 руб</td>
+              <td width="8%">36 руб</td>
+              <td width="8%">36 руб</td>
+              <td width="8%">42 руб</td>
+              <td width="8%">48 руб</td>
+              <td width="8%">56 руб</td>
+              <td width="8%">62 руб</td>
+            </tr>
+            <tr>
+              <td width="22%">Литой диск</td>
+              <td width="8%">40 руб</td>
+              <td width="8%">40 руб</td>
+              <td width="8%">40 руб</td>
+              <td width="8%">46 руб</td>
+              <td width="8%">52 руб</td>
+              <td width="8%">60 руб</td>
+              <td width="8%">66 руб</td>
+            </tr>
+          </table>
+          <table class="info-order">
+            <tr>
+              <td colspan="1" width="20%"></td>
+              <td colspan="3" width="80%">Джипы, Микроавтобусы</td>
+            </tr>
+            <tr>
+              <td width="22%"><span class="main-span">Услуги</span></td>
+              <td width="22%"><span class="main-span">Вид диска</span></td>
+              <td width="8%"><span class="main-span">R13</span></td>
+              <td width="8%"><span class="main-span">R14</span></td>
+              <td width="8%"><span class="main-span">R15</span></td>
+              <td width="8%"><span class="main-span">R16</span></td>
+              <td width="8%"><span class="main-span">R17</span></td>
+              <td width="8%"><span class="main-span">R18</span></td>
+              <td width="8%"><span class="main-span">R19-R22</span></td>
+            </tr>
+            <tr>
+              <td width="22%"><p class="main-p">Демонтаж</p></td>
+              <td width="22%"></td>
+              <td width="8%">2.5 руб</td>
+              <td width="8%">2.5 руб</td>
+              <td width="8%">2.5 руб</td>
+              <td width="8%">3 руб</td>
+              <td width="8%">3.5 руб</td>
+              <td width="8%">3.5 руб</td>
+              <td width="8%">3.5 руб</td>
+            </tr>
+            <tr>
+              <td width="22%"><p class="main-p">Монтаж</p></td>
+              <td width="22%"></td>
+              <td width="8%">2.5 руб</td>
+              <td width="8%">2.5 руб</td>
+              <td width="8%">2.5 руб</td>
+              <td width="8%">3 руб</td>
+              <td width="8%">3.5 руб</td>
+              <td width="8%">3.5 руб</td>
+              <td width="8%">3.5 руб</td>
+            </tr>
+            <tr>
+              <td width="22%" rowspan="2"><p class="main-p">Балансировка (стоимость грузов оплачивается
+                дополнительно)</p></td>
+              <td width="22%">Стальной диск</td>
+              <td width="8%">2 руб</td>
+              <td width="8%">2 руб</td>
+              <td width="8%">2 руб</td>
+              <td width="8%">2 руб</td>
+              <td width="8%">2 руб</td>
+              <td width="8%">2.5 руб</td>
+              <td width="8%">2.5 руб</td>
+            </tr>
+            <tr>
+              <td width="22%">Литой диск</td>
+              <td width="8%">3 руб</td>
+              <td width="8%">3 руб</td>
+              <td width="8%">3 руб</td>
+              <td width="8%">3 руб</td>
+              <td width="8%">3 руб</td>
+              <td width="8%">3.5 руб</td>
+              <td width="8%">4.5 руб</td>
+            </tr>
+            <tr>
+              <td width="22%"><p class="main-p">Снятие колеса с автомобиля</p></td>
+              <td width="22%"></td>
+              <td width="8%">1.75 руб</td>
+              <td width="8%">1.75 руб</td>
+              <td width="8%">1.75 руб</td>
+              <td width="8%">2 руб</td>
+              <td width="8%">2.5 руб</td>
+              <td width="8%">3 руб</td>
+              <td width="8%">3.5 руб</td>
+            </tr>
+            <tr>
+              <td width="22%"><p class="main-p">Установка колеса на автомобиль</p></td>
+              <td width="22%"></td>
+              <td width="8%">1.75 руб</td>
+              <td width="8%">1.75 руб</td>
+              <td width="8%">1.75 руб</td>
+              <td width="8%">2 руб</td>
+              <td width="8%">2.5 руб</td>
+              <td width="8%">3 руб</td>
+              <td width="8%">3.5 руб</td>
+            </tr>
+            <tr>
+              <td width="22%" rowspan="2"><p class="main-p">Комплекс 1 колеса*</p></td>
+              <td width="22%">Стальной диск</td>
+              <td width="8%">10.5 руб</td>
+              <td width="8%">10.5 руб</td>
+              <td width="8%">10.5 руб</td>
+              <td width="8%">12 руб</td>
+              <td width="8%">14 руб</td>
+              <td width="8%">15.5 руб</td>
+              <td width="8%">16.5 руб</td>
+            </tr>
+            <tr>
+              <td width="22%">Литой диск</td>
+              <td width="8%">11.5 руб</td>
+              <td width="8%">11.5 руб</td>
+              <td width="8%">11.5 руб</td>
+              <td width="8%">13 руб</td>
+              <td width="8%">15 руб</td>
+              <td width="8%">16.5 руб</td>
+              <td width="8%">18.5 руб</td>
+            </tr>
+            <tr>
+              <td width="22%" rowspan="2"><p class="main-p">Комплекс 4 колеса*</p></td>
+              <td width="22%">Стальной диск</td>
+              <td width="8%">42 руб</td>
+              <td width="8%">42 руб</td>
+              <td width="8%">42 руб</td>
+              <td width="8%">48 руб</td>
+              <td width="8%">56 руб</td>
+              <td width="8%">62 руб</td>
+              <td width="8%">66 руб</td>
+            </tr>
+            <tr>
+              <td width="22%">Литой диск</td>
+              <td width="8%">46 руб</td>
+              <td width="8%">46 руб</td>
+              <td width="8%">46 руб</td>
+              <td width="8%">52 руб</td>
+              <td width="8%">60 руб</td>
+              <td width="8%">66 руб</td>
+              <td width="8%">74 руб</td>
+            </tr>
+          </table>
+          <table class="info-order">
+            <tr>
+              <td width="70%"><span class="main-span">Услуги</span></td>
+              <td width="30%"><span class="main-span">Стоимость</span></td>
+            </tr>
+            <tr>
+              <td width="70%" align="left"><p class="main-p">Ремонт боковых порезов
+                (горячая вулканизация), от</p></td>
+              <td width="30%">6 руб</td>
+            </tr>
+            <tr>
+              <td width="70%" align="left"><p class="main-p">Устранение утечки воздуха
+                по диску (герметизация)</p></td>
+              <td width="30%">1 руб</td>
+            </tr>
+            <tr>
+              <td width="70%" align="left"><p class="main-p">Ремонт бескамерной шины простой</p></td>
+              <td width="30%">4 руб</td>
+            </tr>
+            <tr>
+              <td width="70%" align="left"><p class="main-p">Ремонт бескамерной шины сложный
+                (усиленная латка)</p></td>
+              <td width="30%">8 руб</td>
+            </tr>
+            <tr>
+              <td width="70%" align="left"><p class="main-p">Ремонт камеры</p></td>
+              <td width="30%">3 руб</td>
+            </tr>
+            <tr>
+              <td width="70%" align="left"><p class="main-p">Замена вентиля (хром разборный)</p></td>
+              <td width="30%">3.5 руб</td>
+            </tr>
+            <tr>
+              <td width="70%" align="left"><p class="main-p">Замена вентиля (декаративный)</p></td>
+              <td width="30%">2.5 руб</td>
+            </tr>
+            <tr>
+              <td width="70%" align="left"><p class="main-p">Замена вентиля</p></td>
+              <td width="30%">2 руб</td>
+            </tr>
+            <tr>
+              <td width="70%" align="left"><p class="main-p">Подкачка колеса (проверка давления)
+                воздухом на а/м (за колесо)</p></td>
+              <td width="30%">1 руб</td>
+            </tr>
+            <tr>
+              <td width="70%" align="left"><p class="main-p">Проверка покрышки на герметичность</p></td>
+              <td width="30%">1 руб</td>
+            </tr>
+            <tr>
+              <td width="70%" align="left"><p class="main-p">Установка камеры</p></td>
+              <td width="30%">0.5 руб</td>
+            </tr>
+            <tr>
+              <td width="70%" align="left"><p class="main-p">Погльзование домкратом шиномонтажа</p></td>
+              <td width="30%">5 руб</td>
+            </tr>
+            <tr>
+              <td width="70%" align="left"><p class="main-p">Пакет (1 штука)</p></td>
+              <td width="30%">0.5 руб</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <a th:href="@{#v-window-5}" href="#v-window-5" class="open-popap">
+        <div class="col m-first">
+          <h2><i class="icon-list-alt"></i>Нано-покрытия</h2>
+          <p>Нанопокрытие – это блеск и лакированная поверхность вашего автомобиля, устойчивость к агрессивным
+            и экстремальным средам и защита от ржавчины.Нанопокрытие стекол автомобиля и кузова машины
+            оберегает авто от грязи и налипания пыли. В результате автомобиль остается чистым более
+            длительный срок.</p>
+        </div>
+      </a>
+      <div class="v-hidden">
+        <div id="v-window-5">
+          <h2>Нано-покрытия автомобилей</h2>
+          <table class="info-order">
+            <tr>
+              <td colspan="1" width="10%"></td>
+              <td colspan="3" width="90%">Стоимость услуг(цены указаны в рублях)</td>
+            </tr>
+            <tr>
+              <td width="55%"><span class="main-span">Наименование услуг</span></td>
+              <td width="15%"><span class="main-span">Легковой</span></td>
+              <td width="15%"><span class="main-span">Минивен, Джип</span></td>
+              <td width="15%"><span class="main-span">Микроавтобус</span></td>
+            </tr>
+            <tr>
+              <td width="55%" align="left">
+                <p class="main-p">Нано-покрытие стёкол "АнтиДождь" (лобовое стекло)</p>
+              </td>
+              <td width="15%">20 руб</td>
+              <td width="15%">22 руб</td>
+              <td width="15%">24 руб</td>
+            </tr>
+            <tr>
+              <td width="55%" align="left">
+                <p class="main-p">Нано-покрытие стёкол "АнтиДождь" (лобовое + 2 боковых)</p><br/>
+              </td>
+              <td width="15%">39 руб</td>
+              <td width="15%">44 руб</td>
+              <td width="15%">48 руб</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <a th:href="@{#v-window-6}" href="#v-window-6" class="open-popap">
+        <div class="col">
+          <h2><i class="icon-list-alt"></i>Дополнительные услуги</h2>
+          <p>Также вы можете ознакомиться со списком дополнительных услуг.</p>
+        </div>
+      </a>
+      <div class="v-hidden">
+        <div id="v-window-6">
+          <h2>Дополнительные услуги</h2>
+          <table class="info-order">
+            <tr>
+              <td colspan="1" width="10%"></td>
+              <td colspan="3" width="90%">Стоимость услуг(цены указаны в рублях)</td>
+            </tr>
+            <tr>
+              <td width="55%"><span class="main-span">Наименование услуг</span></td>
+              <td width="15%"><span class="main-span">Легковой</span></td>
+              <td width="15%"><span class="main-span">Минивен, Джип</span></td>
+              <td width="15%"><span class="main-span">Микроавтобус</span></td>
+            </tr>
+            <tr>
+              <td width="55%" align="left">
+                <p class="main-p">Мойка днища на подъёмнике</p>
+              </td>
+              <td width="15%">15 руб</td>
+              <td width="15%">17 руб</td>
+              <td width="15%">19 руб</td>
+            </tr>
+            <tr>
+              <td width="55%" align="left">
+                <p class="main-p">Мойка двигателя</p><br/>
+              </td>
+              <td width="15%">20 руб</td>
+              <td width="15%">20 руб</td>
+              <td width="15%">20 руб</td>
+            </tr>
+            <tr>
+              <td width="55%" align="left">
+                <p class="main-p">Мойка (сухая чистка) ковриков (за комплект 4 шт.)</p>
+              </td>
+              <td width="15%">3 руб</td>
+              <td width="15%">3 руб</td>
+              <td width="15%">3 руб</td>
+            </tr>
+            <tr>
+              <td width="55%" align="left">
+                <p class="main-p">Уборка салона и багажника пылесосом</p><br/>
+              </td>
+              <td width="15%">8 руб</td>
+              <td width="15%">9 руб</td>
+              <td width="15%">10 руб</td>
+            </tr>
+            <tr>
+              <td width="55%" align="left">
+                <p class="main-p">Обработка всего пластика специальным составом</p>
+              </td>
+              <td width="15%">7 руб</td>
+              <td width="15%">8 руб</td>
+              <td width="15%">9 руб</td>
+            </tr>
+            <tr>
+              <td width="55%" align="left">
+                <p class="main-p">Очистка лобового стекла специальным составом</p><br/>
+              </td>
+              <td width="15%">3 руб</td>
+              <td width="15%">3 руб</td>
+              <td width="15%">4 руб</td>
+            </tr>
+            <tr>
+              <td width="55%" align="left">
+                <p class="main-p">Очистка всех стёкол специальным составом</p>
+              </td>
+              <td width="15%">7 руб</td>
+              <td width="15%">8 руб</td>
+              <td width="15%">9 руб</td>
+            </tr>
+            <tr>
+              <td width="55%" align="left">
+                <p class="main-p">Обработка всех кожаных изделий салона спецсредствами
+                  (лосьон-кондиционер)</p><br/>
+              </td>
+              <td width="15%">9 руб</td>
+              <td width="15%">10 руб</td>
+              <td width="15%">12 руб</td>
+            </tr>
+            <tr>
+              <td width="55%" align="left">
+                <p class="main-p">Мойка колёсных дисков спецсредствами (отбеливание)</p><br/>
+              </td>
+              <td width="15%">от 10 руб</td>
+              <td width="15%">от 10 руб</td>
+              <td width="15%">от 10 руб</td>
+            </tr>
+            <tr>
+              <td width="55%" align="left">
+                <p class="main-p">Мойка запасного колеса (колёса в сборе, либо шины отдельно)</p>
+              </td>
+              <td width="15%">2 руб</td>
+              <td width="15%">2 руб</td>
+              <td width="15%">2 руб</td>
+            </tr>
+            <tr>
+              <td width="55%" align="left">
+                <p class="main-p">Обработка дверных замков и резиновых уплотнителей спецсредствами</p><br/>
+              </td>
+              <td width="15%">3 руб</td>
+              <td width="15%">3 руб</td>
+              <td width="15%">3 руб</td>
+            </tr>
+            <tr>
+              <td width="55%" align="left">
+                <p class="main-p">Обработка (обновление) пластика кузова спецсредствами</p>
+              </td>
+              <td width="15%">3 руб</td>
+              <td width="15%">3 руб</td>
+              <td width="15%">3 руб</td>
+            </tr>
+            <tr>
+              <td width="55%" align="left">
+                <p class="main-p">Удаление битумных, смолы и прочих пятен спецсредствами</p><br/>
+              </td>
+              <td width="15%">от 10 руб</td>
+              <td width="15%">от 10 руб</td>
+              <td width="15%">от 10 руб</td>
+            </tr>
+            <tr>
+              <td width="55%" align="left">
+                <p class="main-p">Обновление (чернение) резины спецсредствами</p><br/>
+              </td>
+              <td width="15%">3 руб</td>
+              <td width="15%">3 руб</td>
+              <td width="15%">3 руб</td>
+            </tr>
+            <tr>
+              <td width="55%" align="left">
+                <p class="main-p">Влажная уборка пластика</p>
+              </td>
+              <td width="15%">3 руб</td>
+              <td width="15%">4 руб</td>
+              <td width="15%">5 руб</td>
+            </tr>
+            <tr>
+              <td width="55%" align="left">
+                <p class="main-p">Влажная уборка всего салона</p><br/>
+              </td>
+              <td width="15%">5 руб</td>
+              <td width="15%">6 руб</td>
+              <td width="15%">7 руб</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="portfolio">
+  <div class="row section-head">
+    <div class="col full">
+      <h2>Портфолио</h2>
+      <p class="desc">Ниже представлены наши работы</p>
+    </div>
+  </div>
+  <div class="row">
+    <div id="portfolio-wrapper">
+      <div class="col portfolio-item">
+        <div class="item-wrap">
+          <a th:href="@{#}" href="#" data-reveal-id="modal-02">
+            <img th:src="@{../images/portfolio/IMG_20170730_112849.jpg}"
+                 src="../static/images/portfolio/IMG_20170730_112849.jpg" alt=""/></a>
+          <div class="portfolio-item-meta">
+            <h5><a th:href="@{#}" href="#">Milk Splash</a></h5>
+          </div>
+        </div>
+      </div>
+      <div class="col portfolio-item">
+        <div class="item-wrap">
+          <a th:href="@{#}" href="#" data-reveal-id="modal-02">
+            <img th:src="@{../images/portfolio/IMG_20170730_112849.jpg}"
+                 src="../static/images/portfolio/IMG_20170730_112849.jpg" alt=""/></a>
+          <div class="portfolio-item-meta">
+            <h5><a th:href="@{#}" href="#">Milk Splash</a></h5>
+          </div>
+        </div>
+      </div>
+      <div class="col portfolio-item">
+        <div class="item-wrap">
+          <a th:href="@{#}" href="#" data-reveal-id="modal-02">
+            <img th:src="@{../images/portfolio/IMG_20170730_112849.jpg}"
+                 src="../static/images/portfolio/IMG_20170730_112849.jpg" alt=""/></a>
+          <div class="portfolio-item-meta">
+            <h5><a th:href="@{#}" href="#">Milk Splash</a></h5>
+          </div>
+        </div>
+      </div>
+      <div class="col portfolio-item">
+        <div class="item-wrap">
+          <a th:href="@{#}" href="#" data-reveal-id="modal-02">
+            <img th:src="@{../images/portfolio/IMG_20170730_112849.jpg}"
+                 src="../static/images/portfolio/IMG_20170730_112849.jpg" alt=""/></a>
+          <div class="portfolio-item-meta">
+            <h5><a th:href="@{#}" href="#">Milk Splash</a></h5>
+          </div>
+        </div>
+      </div>
+      <div class="col portfolio-item">
+        <div class="item-wrap">
+          <a th:href="@{#}" href="#" data-reveal-id="modal-02">
+            <img th:src="@{../images/portfolio/IMG_20170730_112849.jpg}"
+                 src="../static/images/portfolio/IMG_20170730_112849.jpg" alt=""/></a>
+          <div class="portfolio-item-meta">
+            <h5><a th:href="@{#}" href="#">Milk Splash</a></h5>
+          </div>
+        </div>
+      </div>
+      <div class="col portfolio-item">
+        <div class="item-wrap">
+          <a th:href="@{#}" href="#" data-reveal-id="modal-02">
+            <img th:src="@{../images/portfolio/IMG_20170730_112849.jpg}"
+                 src="../static/images/portfolio/IMG_20170730_112849.jpg" alt=""/></a>
+          <div class="portfolio-item-meta">
+            <h5><a th:href="@{#}" href="#">Milk Splash</a></h5>
+          </div>
+        </div>
+      </div>
+      <div class="col portfolio-item">
+        <div class="item-wrap">
+          <a th:href="@{#}" href="#" data-reveal-id="modal-02">
+            <img th:src="@{../images/portfolio/IMG_20170730_112849.jpg}"
+                 src="../static/images/portfolio/IMG_20170730_112849.jpg" alt=""/></a>
+          <div class="portfolio-item-meta">
+            <h5><a th:href="@{#}" href="#">Milk Splash</a></h5>
+          </div>
+        </div>
+      </div>
+      <div class="col portfolio-item">
+        <div class="item-wrap">
+          <a th:href="@{#}" href="#" data-reveal-id="modal-02">
+            <img th:src="@{../images/portfolio/IMG_20170730_112849.jpg}"
+                 src="../static/images/portfolio/IMG_20170730_112849.jpg" alt=""/></a>
+          <div class="portfolio-item-meta">
+            <h5><a th:href="@{#}" href="#">Milk Splash</a></h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- modal-->
+  <div id="modal-01" class="reveal-modal">
+    <img class="scale-with-grid" th:src="@{../images/portfolio/IMG_20170818_083508.jpg}"
+         src="../static/images/portfolio/IMG_20170818_083508.jpg" alt=""/>
+    <div class="description-box">
+      <h4>Полировка, покрытие анти-дождь</h4>
+      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit
+        consequat ipsum, nec sagittis sem nibh id elit.</p>
+    </div>
+    <div class="link-box">
+      <a class="close-reveal-modal">Close</a>
+    </div>
+  </div>
+  <div id="modal-02" class="reveal-modal">
+    <img class="scale-with-grid" th:src="@{../images/portfolio/modals/IMG_20170730_112849.jpg}"
+         src="../static/images/portfolio/modals/IMG_20170730_112849.jpg" alt=""/>
+    <div class="description-box">
+      <h4>Milk Splash</h4>
+      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit
+        consequat ipsum, nec sagittis sem nibh id elit.</p>
+    </div>
+    <div class="link-box">
+      <a class="close-reveal-modal">Close</a>
+    </div>
+  </div>
+  <div id="modal-03" class="reveal-modal">
+    <img class="scale-with-grid" th:src="@{../images/portfolio/modals/IMG_20170730_112849.jpg}"
+         src="../static/images/portfolio/modals/IMG_20170730_112849.jpg" alt=""/>
+    <div class="description-box">
+      <h4>Eve</h4>
+      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit
+        consequat ipsum, nec sagittis sem nibh id elit.</p>
+    </div>
+    <div class="link-box">
+      <a class="close-reveal-modal">Close</a>
+    </div>
+  </div>
+  <div id="modal-04" class="reveal-modal">
+    <img class="scale-with-grid" th:src="@{../images/portfolio/modals/m-sneaker-splash.jpg}"
+         src="../static/images/portfolio/modals/m-sneaker-splash.jpg" alt=""/>
+    <div class="description-box">
+      <h4>Sneaker Splash</h4>
+      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit
+        consequat ipsum, nec sagittis sem nibh id elit.</p>
+    </div>
+    <div class="link-box">
+      <a class="close-reveal-modal">Close</a>
+    </div>
+  </div>
+  <div id="modal-05" class="reveal-modal">
+    <img class="scale-with-grid" th:src="@{../images/portfolio/modals/m-judah.jpg}"
+         src="../static/images/portfolio/modals/m-judah.jpg" alt=""/>
+    <div class="description-box">
+      <h4>Judah</h4>
+      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit
+        consequat ipsum, nec sagittis sem nibh id elit.</p>
+    </div>
+    <div class="link-box">
+      <a class="close-reveal-modal">Close</a>
+    </div>
+  </div>
+  <div id="modal-06" class="reveal-modal">
+    <img class="scale-with-grid" th:src="@{../images/portfolio/modals/m-vector-flower.jpg}"
+         src="../static/images/portfolio/modals/m-vector-flower.jpg" alt=""/>
+    <div class="description-box">
+      <h4>Vector Flower</h4>
+      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit
+        consequat ipsum, nec sagittis sem nibh id elit.</p>
+    </div>
+    <div class="link-box">
+      <a class="close-reveal-modal">Close</a>
+    </div>
+  </div>
+  <div id="modal-07" class="reveal-modal">
+    <img class="scale-with-grid" th:src="@{../images/portfolio/modals/m-clock.jpg}"
+         src="../static/images/portfolio/modals/m-clock.jpg" alt=""/>
+    <div class="description-box">
+      <h4>Clock</h4>
+      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit
+        consequat ipsum, nec sagittis sem nibh id elit.</p>
+    </div>
+    <div class="link-box">
+      <a class="close-reveal-modal">Close</a>
+    </div>
+  </div>
+  <div id="modal-08" class="reveal-modal">
+    <img class="scale-with-grid" th:src="@{../images/portfolio/modals/m-fields.jpg}"
+         src="../static/images/portfolio/modals/m-fields.jpg" alt=""/>
+    <div class="description-box">
+      <h4>Fields</h4>
+      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit
+        consequat ipsum, nec sagittis sem nibh id elit.</p>
+    </div>
+    <div class="link-box">
+      <a class="close-reveal-modal">Close</a>
+    </div>
+  </div>
+</section>
+<section id="journal">
+  <div class="row section-head">
+    <div class="col full">
+      <h2>Запись онлайн</h2>
+      <p class="desc">Ниже вы можете записаться в удобное для вас время!</p>
+    </div>
+    <div id="form-order-main">
+      <form id="form-order-services" name="form-order-services">
+        <table id="table-info-form">
+          <tr>
+            <td>
+              <select title="form-services" id="form-services" name="form-services">
+                <option>Вид услуги:</option>
+                <option value="1">Автомойка</option>
+                <option value="2">Химчистка</option>
+                <option value="3">Полировка</option>
+                <option value="4">Шиномонтаж</option>
+              </select>
+            </td>
+            <td>
+              <select title="vid-auto" id="vid-auto" name="vid-auto">
+                <option>Вид услуги:</option>
+                <option value="1">Легковой автомобиль</option>
+                <option value="2">Минивен</option>
+                <option value="3">Микроавтобус</option>
+              </select>
+            </td>
+            <td>
+              <input type="date" id="date" name="date" placeholder="">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <select title="time" id="time" name="time">
+                <option>Время:</option>
+                <option value="1">8.00</option>
+                <option value="2">8.30</option>
+                <option value="3">9.00</option>
+                <option value="4">9.30</option>
+                <option value="5">10.00</option>
+                <option value="6">10.30</option>
+                <option value="7">11.00</option>
+                <option value="8">11.30</option>
+                <option value="9">12.00</option>
+                <option value="10">12.30</option>
+                <option value="11">13.00</option>
+                <option value="12">13.30</option>
+                <option value="13">14.00</option>
+                <option value="14">14.30</option>
+                <option value="15">15.00</option>
+                <option value="16">15.30</option>
+                <option value="17">16.00</option>
+                <option value="18">16.30</option>
+                <option value="19">17.00</option>
+                <option value="20">17.30</option>
+                <option value="21">18.00</option>
+                <option value="22">18.30</option>
+                <option value="23">19.00</option>
+                <option value="24">19.30</option>
+                <option value="25">20.00</option>
+                <option value="26">20.30</option>
+                <option value="27">21.00</option>
+                <option value="28">21.30</option>
+                <option value="29">22.00</option>
+                <option value="30">22.30</option>
+              </select>
+            </td>
+            <td>
+              <input type="text" id="number" name="number" placeholder="Номер телефона:">
+            </td>
+            <td>
+              <input type="text" id="name" name="name" placeholder="Имя:">
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <textarea placeholder="Описание" id="form-comments"></textarea>
+            </td>
+            <td>
+              <input type="submit" id="order-submit" placeholder="Отправить"/>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </div>
+</section>
+<section id="contact">
+  <div class="row section-head">
+    <div class="col full">
+      <h2>Отзывы</h2>
+      <p class="desc">Делитесь своими впечатлениями о нашей сети!</p>
+    </div>
+  </div>
+  <div class="row cont">
+    <div class="col g-7" id="col-contact">
+      <form name="contactForm" id="contactForm" method="" action="">
+        <fieldset>
+          <div>
+            <label for="contactName">Имя: <span class="required">*</span></label>
+            <input name="contactName" type="text" id="contactName" size="35" value=""/>
+          </div>
+          <div>
+            <label for="contactNumber">Номер телефона: <span class="required">*</span></label>
+            <input name="contactNumber" type="text" id="contactNumber" size="35" value=""/>
+          </div>
+          <div>
+            <label for="contactMessage">Комментарий: <span class="required">*</span></label>
+            <textarea name="contactMessage" id="contactMessage" rows="15" cols="50"></textarea>
+          </div>
+          <div>
+            <button class="submit" id="sub-com" onclick="getReviews()">Отправить отзыв</button>
+            <span id="image-loader">
+                                <img th:src="@{../images/loader.gif}" src="../static/images/loader.gif" alt=""/>
+                             </span>
+          </div>
+
+        </fieldset>
+      </form>
+      <div id="message-warning"></div>
+      <div id="message-success">
+        <i class="icon-ok"></i>Your message was sent, thank you!<br/>
+      </div>
+    </div>
+    <aside class="col g-5">
+      <h3>Контактная информация</h3>
+      <table>
+        <tr>
+          <td>Адреса</td>
+          <td>Телефоны</td>
+        </tr>
+        <tr>
+          <td>г. Минск, ул. Горецкого, д. 49:</td>
+          <td>
+            <a th:href="@{tel:+375(44)344-469-34}" href="tel:+375(44)344-469-34">+375(44)644-99-23</a><br/>
+            <a th:href="@{tel:+375(29)344-469-34}" href="tel:+375(29)344-469-34">+375(33)344-99-23</a>
+          </td>
+        </tr>
+        <tr>
+          <td>г. Минск, ул. Ложинская, д. 4:</td>
+          <td>
+            <a th:href="@{tel:+375(44)344-469-34}" href="tel:+375(44)344-469-34">+375(44)344-46-34</a><br/>
+            <a th:href="@{tel:+375(29)344-469-34}" href="tel:+375(29)344-469-34">+375(33)344-46-34</a>
+          </td>
+        </tr>
+        <tr>
+          <td>мк-н Боровляны, ул. Хвойная, д. 2а:</td>
+          <td>
+            <a th:href="@{tel:+375(44)344-469-34}" href="tel:+375(44)344-469-34">+375(44)344-46-34</a><br/>
+            <a th:href="@{tel:+375(29)344-469-34}" href="tel:+375(29)344-469-34">+375(33)344-46-34</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="#commentWindow" class="popapComment"><input type="button" id="buttonComment" value="Отзывы"></a>
+            <div id="windowB">
+              <div id="commentWindow">
+                <table>
+                  <tr>
+                    <td width="300px">Имя</td>
+                    <td width="400px">Отзыв</td>
+                  </tr>
+                  <tr>
+                    <td width="300px"></td>
+                    <td width="400px"></td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </aside>
+  </div>
+  <div id="maps">
+    <iframe th:src="@{https://www.google.com/maps/d/embed?mid=1hC38CTRa3qucHm95jKPhjgrh3vb56lUN&hl=ru}"
+            src="https://www.google.com/maps/d/embed?mid=1hC38CTRa3qucHm95jKPhjgrh3vb56lUN&hl=ru" scrolling="no"
+            marginheight="0" marginwidth="0"></iframe>
+  </div>
+</section>
+<footer>
+  <div class="row">
+    <div class="col g-7">
+      <ul class="copyright">
+        <li>&copy; 2017 Автомойка мой порт</li>
+      </ul>
+    </div>
+    <div class="col g-5 pull-right">
+      <ul class="social-links">
+        <li><a th:href="@{#}" href="#"><i class="icon-facebook"></i></a></li>
+        <li><a th:href="@{#}" href="#"><i class="icon-google-plus-sign"></i></a></li>
+        <li><a th:href="@{#}" href="#"><i class="icon-linkedin"></i></a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<script th:src="@{http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js}"
+        src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script th:src="@{/js/jquery-1.10.2.min.js}" ' +
+    'src="../static/js/jquery-1.10.2.min.js"><\/script>')</script>
+<script type="text/javascript" th:src="@{/js/jquery-migrate-1.2.1.min.js}"
+        src="../static/js/jquery-migrate-1.2.1.min.js"></script>
+<script th:src="@{/js/scrollspy.js}" src="../static/js/scrollspy.js"></script>
+<script th:src="@{/js/jquery.flexslider.js}" src="../static/js/jquery.flexslider.js"></script>
+<script th:src="@{/js/jquery.reveal.js}" src="../static/js/jquery.reveal.js"></script>
+<script th:src="@{http://maps.google.com/maps/api/js?sensor=true}" src="http://maps.google.com/maps/api/js?sensor=true"
+        type="text/javascript"></script>
+<script th:src="@{/js/gmaps.js}" src="../static/js/gmaps.js"></script>
+<script th:src="@{/js/init.js}" src="../static/js/init.js"></script>
+<script th:src="@{/js/smoothscrolling.js}" src="../static/js/smoothscrolling.js"></script>
+<script th:src="@{/dist/jquery.magnific-popup.js}" src="../static/dist/jquery.magnific-popup.js"></script>
+<script src="../static/js/popap.js" th:src="@{/js/popap.js}" type="text/javascript"></script>
+<script th:src="@{/js/jquery.validate.min.js}" type="text/javascript"
+        src="../static/js/jquery.validate.min.js"></script>
+<script th:src="@{/js/jquery.inputmask.js}" type="text/javascript" src="../static/js/jquery.inputmask.js"></script>
+</body>
+</html>
